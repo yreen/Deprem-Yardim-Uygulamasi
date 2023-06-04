@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.atifyaren.donemsonuprojesi.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.atifyaren.donemsonuprojesi.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_bipFragment"
+            app:destination="@id/bipFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_bagisFragment"
+            app:destination="@id/bagisFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_yardimAlanlariFragment"
+            app:destination="@id/yardimAlanlariFragment"
+            app:popUpTo="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_toplanmaAlanlariFragment"
+            app:destination="@id/toplanmaAlanlariFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_depremCantasiFragment"
+            app:destination="@id/depremCantasiFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_acilYardimFragment"
+            app:destination="@id/acilYardimFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_bilgilerimFragment"
+            app:destination="@id/bilgilerimFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_yolBilgisiFragment"
+            app:destination="@id/yolBilgisiFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_bilgilendirmeFragment"
+            app:destination="@id/bilgilendirmeFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_esyaYardimFragment"
+            app:destination="@id/esyaYardimFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bipFragment"
+        android:name="com.atifyaren.donemsonuprojesi.BipFragment"
+        android:label="fragment_bip"
+        tools:layout="@layout/fragment_bip" />
+    <fragment
+        android:id="@+id/bagisFragment"
+        android:name="com.atifyaren.donemsonuprojesi.BagisFragment"
+        android:label="fragment_bagis"
+        tools:layout="@layout/fragment_bagis" />
+    <fragment
+        android:id="@+id/yardimAlanlariFragment"
+        android:name="com.atifyaren.donemsonuprojesi.YardimAlanlariFragment"
+        android:label="fragment_yardim_alanlari"
+        tools:layout="@layout/fragment_yardim_alanlari" />
+    <fragment
+        android:id="@+id/toplanmaAlanlariFragment"
+        android:name="com.atifyaren.donemsonuprojesi.ToplanmaAlanlariFragment"
+        android:label="fragment_toplanma_alanlari"
+        tools:layout="@layout/fragment_toplanma_alanlari" />
+    <fragment
+        android:id="@+id/depremCantasiFragment"
+        android:name="com.atifyaren.donemsonuprojesi.DepremCantasiFragment"
+        android:label="fragment_deprem_cantasi"
+        tools:layout="@layout/fragment_deprem_cantasi" />
+    <fragment
+        android:id="@+id/acilYardimFragment"
+        android:name="com.atifyaren.donemsonuprojesi.AcilYardimFragment"
+        android:label="fragment_acil_yardim"
+        tools:layout="@layout/fragment_acil_yardim" />
+    <fragment
+        android:id="@+id/bilgilerimFragment"
+        android:name="com.atifyaren.donemsonuprojesi.BilgilerimFragment"
+        android:label="fragment_bilgilerim"
+        tools:layout="@layout/fragment_bilgilerim" />
+    <fragment
+        android:id="@+id/yolBilgisiFragment"
+        android:name="com.atifyaren.donemsonuprojesi.YolBilgisiFragment"
+        android:label="fragment_yol_bilgisi"
+        tools:layout="@layout/fragment_yol_bilgisi" />
+    <fragment
+        android:id="@+id/bilgilendirmeFragment"
+        android:name="com.atifyaren.donemsonuprojesi.BilgilendirmeFragment"
+        android:label="fragment_bilgilendirme"
+        tools:layout="@layout/fragment_bilgilendirme" />
+    <fragment
+        android:id="@+id/esyaYardimFragment"
+        android:name="com.atifyaren.donemsonuprojesi.EsyaYardimFragment"
+        android:label="fragment_esya_yardim"
+        tools:layout="@layout/fragment_esya_yardim" />
+</navigation>

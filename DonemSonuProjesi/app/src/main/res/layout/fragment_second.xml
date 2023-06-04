@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+
+
+    <Button
+        android:id="@+id/btn_ana_sayfa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ana Sayfa"
+        android:width="350dp"
+        android:layout_marginBottom="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/btn_bip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BİP"
+        android:width="350dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_ana_sayfa"
+        app:layout_constraintStart_toStartOf="@id/btn_ana_sayfa"
+        app:layout_constraintTop_toBottomOf="@id/btn_ana_sayfa" />
+    <Button
+        android:id="@+id/btn_acil_yardim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACİL YARDIM"
+        android:width="350dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_bip"
+        app:layout_constraintStart_toStartOf="@id/btn_bip"
+        app:layout_constraintTop_toBottomOf="@id/btn_bip" />
+    <Button
+        android:id="@+id/btn_yardim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EŞYA YARDIM"
+        android:width="350dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_acil_yardim"
+        app:layout_constraintStart_toStartOf="@id/btn_acil_yardim"
+        app:layout_constraintTop_toBottomOf="@id/btn_acil_yardim" />
+    <Button
+        android:id="@+id/btn_yol_bilgisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOL BİLGİSİ"
+        android:width="350dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_yardim"
+        app:layout_constraintStart_toStartOf="@id/btn_yardim"
+        app:layout_constraintTop_toBottomOf="@id/btn_yardim" />
+    <Button
+        android:id="@+id/btn_deprem_cantasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEPREM ÇANTASINDA NE OLMALI"
+        android:width="350dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_yol_bilgisi"
+        app:layout_constraintStart_toStartOf="@id/btn_yol_bilgisi"
+        app:layout_constraintTop_toBottomOf="@id/btn_yol_bilgisi" />
+    <Button
+        android:id="@+id/btn_bilgi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BİLGİLENDİRME"
+        android:width="350dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_deprem_cantasi"
+        app:layout_constraintStart_toStartOf="@id/btn_deprem_cantasi"
+        app:layout_constraintTop_toBottomOf="@id/btn_deprem_cantasi" />
+    <Button
+        android:id="@+id/btn_toplanma_alanlari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOPLANMA ALANLARI"
+        android:width="350dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_bilgi"
+        app:layout_constraintStart_toStartOf="@id/btn_bilgi"
+        app:layout_constraintTop_toBottomOf="@id/btn_bilgi" />
+    <Button
+        android:id="@+id/btn_yardim_alanlari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YARDIM ALANLARI"
+        android:width="350dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_toplanma_alanlari"
+        app:layout_constraintStart_toStartOf="@id/btn_toplanma_alanlari"
+        app:layout_constraintTop_toBottomOf="@id/btn_toplanma_alanlari" />
+    <Button
+        android:id="@+id/btn_bagis_bilgileri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BAĞIŞ BİLGİLERİ"
+        android:width="350dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_yardim_alanlari"
+        app:layout_constraintStart_toStartOf="@id/btn_yardim_alanlari"
+        app:layout_constraintTop_toBottomOf="@id/btn_yardim_alanlari" />
+    <Button
+    android:id="@+id/btn_bilgilerim"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="BİLGİLERİM"
+    android:width="350dp"
+    app:layout_constraintEnd_toEndOf="@id/btn_bagis_bilgileri"
+    app:layout_constraintStart_toStartOf="@id/btn_bagis_bilgileri"
+    app:layout_constraintTop_toBottomOf="@id/btn_bagis_bilgileri" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
